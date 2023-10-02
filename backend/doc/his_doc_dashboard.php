@@ -59,7 +59,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="text-right">
+                                            <div class="text-center">
                                                 <?php
                                                     //code for summing up number of out patients 
                                                     $result ="SELECT count(*) FROM his_patients  ";
@@ -89,7 +89,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="text-right">
+                                            <div class="text-center">
                                                 <?php
                                                     /* 
                                                      * code for summing up number of assets,
@@ -120,7 +120,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="text-right">
+                                            <div class="text-center">
                                                 <?php
                                                     /* 
                                                      * code for summing up number of pharmaceuticals,
@@ -155,11 +155,12 @@
                                                 <div class="avatar-lg rounded-circle bg-soft-danger border-danger border">
                                                     <i class="fas fa-user-tag font-22 avatar-title text-danger"></i>
                                                 </div>
+                                                
                                             </div>
                                             <div class="col-6">
-                                                <div class="text-right">
-                                                    <h3 class="text-dark mt-1"></span></h3>
-                                                    <p class="text-muted mb-1 text-truncate">My Profile</p>
+                                                <div class="text-center">
+                                                    <h3 class="text-dark mt-1"></h3>
+                                                    <p class="text-muted mb-1 text-truncate" >My Profile</p>   
                                                 </div>
                                             </div>
                                         </div> <!-- end row-->
@@ -180,11 +181,21 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <div class="text-right">
-                                                    <h3 class="text-dark mt-1"></span></h3>
-                                                    <p class="text-muted mb-1 text-truncate">My Payroll</p>
+                                                <div class="text-center">
+                                                     <?php 
+                                                        $result_salary = "SELECT pay_emp_salary FROM his_payrolls";
+                                                         $stmt_salary = $mysqli->prepare($result_salary);
+                                                            $stmt_salary->execute();
+            
+                                                         $stmt_salary->bind_result($salary); // Use $stmt_salary instead of $stmt
+                                                            $stmt_salary->fetch();
+                                                            $stmt_salary->close();
+                                                            ?>                                                      
+                                                                <h3 class="text-dark mt-1"><?php echo $salary; ?>$</h3>
+                                                                 <p class="text-muted mb-1 text-truncate">My Payroll</p>
+                                                    </div>
                                                 </div>
-                                            </div>
+
                                         </div> <!-- end row-->
                                     </div>
                                 </a>     <!-- end widget-rounded-circle-->
