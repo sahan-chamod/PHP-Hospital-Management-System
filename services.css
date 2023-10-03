@@ -1,0 +1,43 @@
+/* Style the container with the background image */
+.item {
+    background-image: url('./assets/images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the container's height to cover the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color set to white */
+  }
+  
+  /* Style the slide-text content */
+  .slide-text {
+    text-align: center;
+  }
+  
+  .slide-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* Text color set to white */
+  }
+  
+  .slide-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff; /* Text color set to white */
+  }
+  
+  /* Style the "Download Now" button */
+  .slide-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color set to white */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .slide-btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  

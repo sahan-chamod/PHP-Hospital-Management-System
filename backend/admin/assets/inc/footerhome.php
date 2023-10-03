@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <
+                
             </div>
             <footer class="main-footer" style="color: #155724; background-color: #d4edda; border-color: #c3e6cb; margin-top: 20px; text-align: center;">
     <div class="container">

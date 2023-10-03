@@ -20,6 +20,55 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/linearicons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Style the container */
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: transparent;
+            color: black;
+            padding: 5px 5px;
+            border: none;
+            cursor: pointer;
+            
+            
+        }
+
+        /* Style the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+           
+        }
+
+        /* Style the links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Preloader Starts -->
@@ -44,8 +93,17 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="index.php">Home</a></li>
-                        <li><a href="backend/doc/index.php">Doctor's Login</a></li>
-                        <li><a href="backend/admin/index.php">Administrator Login</a></li>
+                        <li class="menu-active"><a href="aboutus.php">About Us</a></li>
+                        <li class="menu-active"><a href="Service.php">Services</a></li>
+                        <!-- <li><a href="backend/doc/index.php">Doctor's Login</a</li>
+                        <li><a href="backend/admin/index.php">Administrator Login</a></li> -->
+                        <div class="dropdown-container">
+                            <button class="dropbtn">Login</button>
+                                <div class="dropdown-content ">
+                                     <a href="backend/doc/index.php">Doctor's Login</a>
+                                        <a href="backend/admin/index.php ">Administrator Login</a>
+                                 </div>
+                            </div>
                     </ul>
                 </nav><!-- #nav-menu-container -->		    		
                 </div>

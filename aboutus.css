@@ -1,0 +1,73 @@
+/* Style for the container */
+.item {
+    position: relative;
+    width: 100%;
+    height: 400%; /* Adjust the height as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+}
+
+/* Style for the slide-table and its contents */
+.slide-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.slide-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Style for the slide-text */
+.slide-text {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style for the h2 and p elements */
+.slide-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slide-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style for the slide-buttons */
+.slide-buttons {
+    margin-top: 20px;
+}
+
+/* Style for the download button */
+.slide-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.slide-btn:hover {
+    background-color: #0056b3;
+}
+.item{
+    background-image: url('./assets/images/background.jpg');
+  background-size: cover;  /* Optional: Adjust the size of the background image */
+  
+  background-position:  center top;
+  height: 800px;
+}
